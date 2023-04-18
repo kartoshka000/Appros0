@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Appros</string>
+    <string name="my.ankets">Мои опросы</string>
+    <string name="new.anket">Создать опрос</string>
+    <string name="new.quetion.type">Выберете тип вопроса:</string>
+    <string name="add">Добавить</string>
+    <string name="delete">Удалить</string>
+    <string name="write_quetion">Введите вопрос</string>
+    <string name="otmena">Отмена</string>
+    <string name="error_max_quetions">Ошибка: превышено максимальное кол-во вопросов</string>
+    <string name="write_variables_of_ansvers">Введите варианты ответов, разделяя символом ";"</string>
+    <string name="add_anket_name">Введите название опроса</string>
+    <string name="name_error">Некоректное имя опроса</string>
+    <string name="quetion_error">Некоректный вопрос номер</string>
+    <string name="ansv_variable_error">Некоректные варианты ответа в вопросе номер</string>
+    <string name="start_anket">Начать опрос</string>
+    <string name="stat">Статистика</string>
+    <string name="save">Сохранить</string>
+    <string-array name="questions.types">
+        <item>Текст</item>
+        <item>Число</item>
+        <item>Да/Нет</item>
+        <item>Несколько вариантов ответа</item>
+    </string-array>
+</resources>

@@ -1,0 +1,1402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/new.anket.bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="new_anket_bt"
+        android:text="@string/new.anket"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new.anket.bt">
+
+        <LinearLayout
+            android:id="@+id/linerlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/my.ankets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/my.ankets"
+                android:textSize="48sp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ank1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/anketname1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="TextView"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/delankbt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:text="@string/delete"
+                    app:layout_constraintStart_toEndOf="@+id/statbt1"
+                    app:layout_constraintTop_toTopOf="@+id/statbt1" />
+
+                <Button
+                    android:id="@+id/startbt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/start_anket"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/anketname1" />
+
+                <Button
+                    android:id="@+id/statbt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/stat"
+                    app:layout_constraintStart_toStartOf="@+id/startbt1"
+                    app:layout_constraintTop_toBottomOf="@+id/startbt1" />
+            </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt2"
+                app:layout_constraintTop_toTopOf="@+id/statbt2" />
+
+            <Button
+                android:id="@+id/startbt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname2" />
+
+            <Button
+                android:id="@+id/statbt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt2"
+                app:layout_constraintTop_toBottomOf="@+id/startbt2" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt3"
+                app:layout_constraintTop_toTopOf="@+id/statbt3" />
+
+            <Button
+                android:id="@+id/startbt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname3" />
+
+            <Button
+                android:id="@+id/statbt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt3"
+                app:layout_constraintTop_toBottomOf="@+id/startbt3" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt4"
+                app:layout_constraintTop_toTopOf="@+id/statbt4" />
+
+            <Button
+                android:id="@+id/startbt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname4" />
+
+            <Button
+                android:id="@+id/statbt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt4"
+                app:layout_constraintTop_toBottomOf="@+id/startbt4" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt5"
+                app:layout_constraintTop_toTopOf="@+id/statbt5" />
+
+            <Button
+                android:id="@+id/startbt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname5" />
+
+            <Button
+                android:id="@+id/statbt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt5"
+                app:layout_constraintTop_toBottomOf="@+id/startbt5" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt6"
+                app:layout_constraintTop_toTopOf="@+id/statbt6" />
+
+            <Button
+                android:id="@+id/startbt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname6" />
+
+            <Button
+                android:id="@+id/statbt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt6"
+                app:layout_constraintTop_toBottomOf="@+id/startbt6" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt7"
+                app:layout_constraintTop_toTopOf="@+id/statbt7" />
+
+            <Button
+                android:id="@+id/startbt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname7" />
+
+            <Button
+                android:id="@+id/statbt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt7"
+                app:layout_constraintTop_toBottomOf="@+id/startbt7" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt8"
+                app:layout_constraintTop_toTopOf="@+id/statbt8" />
+
+            <Button
+                android:id="@+id/startbt8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname8" />
+
+            <Button
+                android:id="@+id/statbt8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt8"
+                app:layout_constraintTop_toBottomOf="@+id/startbt8" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt9"
+                app:layout_constraintTop_toTopOf="@+id/statbt9" />
+
+            <Button
+                android:id="@+id/startbt9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname9" />
+
+            <Button
+                android:id="@+id/statbt9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt9"
+                app:layout_constraintTop_toBottomOf="@+id/startbt9" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt10"
+                app:layout_constraintTop_toTopOf="@+id/statbt10" />
+
+            <Button
+                android:id="@+id/startbt10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname10" />
+
+            <Button
+                android:id="@+id/statbt10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt10"
+                app:layout_constraintTop_toBottomOf="@+id/startbt10" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt11"
+                app:layout_constraintTop_toTopOf="@+id/statbt11" />
+
+            <Button
+                android:id="@+id/startbt11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname11" />
+
+            <Button
+                android:id="@+id/statbt11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt11"
+                app:layout_constraintTop_toBottomOf="@+id/startbt11" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt12"
+                app:layout_constraintTop_toTopOf="@+id/statbt12" />
+
+            <Button
+                android:id="@+id/startbt12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname12" />
+
+            <Button
+                android:id="@+id/statbt12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt12"
+                app:layout_constraintTop_toBottomOf="@+id/startbt12" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt13"
+                app:layout_constraintTop_toTopOf="@+id/statbt13" />
+
+            <Button
+                android:id="@+id/startbt13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname13" />
+
+            <Button
+                android:id="@+id/statbt13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt13"
+                app:layout_constraintTop_toBottomOf="@+id/startbt13" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt14"
+                app:layout_constraintTop_toTopOf="@+id/statbt14" />
+
+            <Button
+                android:id="@+id/startbt14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname14" />
+
+            <Button
+                android:id="@+id/statbt14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt14"
+                app:layout_constraintTop_toBottomOf="@+id/startbt14" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt15"
+                app:layout_constraintTop_toTopOf="@+id/statbt15" />
+
+            <Button
+                android:id="@+id/startbt15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname15" />
+
+            <Button
+                android:id="@+id/statbt15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt15"
+                app:layout_constraintTop_toBottomOf="@+id/startbt15" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt16"
+                app:layout_constraintTop_toTopOf="@+id/statbt16" />
+
+            <Button
+                android:id="@+id/startbt16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname16" />
+
+            <Button
+                android:id="@+id/statbt16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt16"
+                app:layout_constraintTop_toBottomOf="@+id/startbt16" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt17"
+                app:layout_constraintTop_toTopOf="@+id/statbt17" />
+
+            <Button
+                android:id="@+id/startbt17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname17" />
+
+            <Button
+                android:id="@+id/statbt17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt17"
+                app:layout_constraintTop_toBottomOf="@+id/startbt17" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt18"
+                app:layout_constraintTop_toTopOf="@+id/statbt18" />
+
+            <Button
+                android:id="@+id/startbt18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname18" />
+
+            <Button
+                android:id="@+id/statbt18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt18"
+                app:layout_constraintTop_toBottomOf="@+id/startbt18" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt19"
+                app:layout_constraintTop_toTopOf="@+id/statbt19" />
+
+            <Button
+                android:id="@+id/startbt19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname19" />
+
+            <Button
+                android:id="@+id/statbt19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt19"
+                app:layout_constraintTop_toBottomOf="@+id/startbt19" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt20"
+                app:layout_constraintTop_toTopOf="@+id/statbt20" />
+
+            <Button
+                android:id="@+id/startbt20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname20" />
+
+            <Button
+                android:id="@+id/statbt20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt20"
+                app:layout_constraintTop_toBottomOf="@+id/startbt20" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt21"
+                app:layout_constraintTop_toTopOf="@+id/statbt21" />
+
+            <Button
+                android:id="@+id/startbt21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname21" />
+
+            <Button
+                android:id="@+id/statbt21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt21"
+                app:layout_constraintTop_toBottomOf="@+id/startbt21" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt22"
+                app:layout_constraintTop_toTopOf="@+id/statbt22" />
+
+            <Button
+                android:id="@+id/startbt22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname22" />
+
+            <Button
+                android:id="@+id/statbt22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt22"
+                app:layout_constraintTop_toBottomOf="@+id/startbt22" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt23"
+                app:layout_constraintTop_toTopOf="@+id/statbt23" />
+
+            <Button
+                android:id="@+id/startbt23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname23" />
+
+            <Button
+                android:id="@+id/statbt23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt23"
+                app:layout_constraintTop_toBottomOf="@+id/startbt23" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt24"
+                app:layout_constraintTop_toTopOf="@+id/statbt24" />
+
+            <Button
+                android:id="@+id/startbt24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname24" />
+
+            <Button
+                android:id="@+id/statbt24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt24"
+                app:layout_constraintTop_toBottomOf="@+id/startbt24" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt25"
+                app:layout_constraintTop_toTopOf="@+id/statbt25" />
+
+            <Button
+                android:id="@+id/startbt25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname25" />
+
+            <Button
+                android:id="@+id/statbt25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt25"
+                app:layout_constraintTop_toBottomOf="@+id/startbt25" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt26"
+                app:layout_constraintTop_toTopOf="@+id/statbt26" />
+
+            <Button
+                android:id="@+id/startbt26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname26" />
+
+            <Button
+                android:id="@+id/statbt26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt26"
+                app:layout_constraintTop_toBottomOf="@+id/startbt26" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt27"
+                app:layout_constraintTop_toTopOf="@+id/statbt27" />
+
+            <Button
+                android:id="@+id/startbt27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname27" />
+
+            <Button
+                android:id="@+id/statbt27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt27"
+                app:layout_constraintTop_toBottomOf="@+id/startbt27" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt28"
+                app:layout_constraintTop_toTopOf="@+id/statbt28" />
+
+            <Button
+                android:id="@+id/startbt28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname28" />
+
+            <Button
+                android:id="@+id/statbt28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt28"
+                app:layout_constraintTop_toBottomOf="@+id/startbt28" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt29"
+                app:layout_constraintTop_toTopOf="@+id/statbt29" />
+
+            <Button
+                android:id="@+id/startbt29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname29" />
+
+            <Button
+                android:id="@+id/statbt29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt29"
+                app:layout_constraintTop_toBottomOf="@+id/startbt29" />
+        </androidx.constraintlayout.widget.ConstraintLayout><androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ank30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/anketname30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="TextView"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/delankbt30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete"
+                app:layout_constraintStart_toEndOf="@+id/statbt30"
+                app:layout_constraintTop_toTopOf="@+id/statbt30" />
+
+            <Button
+                android:id="@+id/startbt30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/start_anket"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anketname30" />
+
+            <Button
+                android:id="@+id/statbt30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/stat"
+                app:layout_constraintStart_toStartOf="@+id/startbt30"
+                app:layout_constraintTop_toBottomOf="@+id/startbt30" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
